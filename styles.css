@@ -48,7 +48,7 @@ a {
 }
 
 .hero-content {
-  max-width: 950px;
+  max-width: 980px;
   margin: 90px auto 0;
 }
 
@@ -63,15 +63,15 @@ a {
 }
 
 h1 {
-  font-size: clamp(2.8rem, 7vw, 5.7rem);
+  font-size: clamp(3.4rem, 8vw, 6.4rem);
   line-height: 0.95;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.06em;
   max-width: 900px;
   margin-bottom: 26px;
 }
 
 .subtitle {
-  max-width: 690px;
+  max-width: 760px;
   font-size: 1.25rem;
   color: #5f5a52;
   margin-bottom: 32px;
@@ -121,7 +121,7 @@ main {
 }
 
 .about {
-  max-width: 900px;
+  max-width: 940px;
 }
 
 .about p {
@@ -247,7 +247,7 @@ h2 {
   font-size: 0.96rem;
 }
 
-.currently {
+.research-focus {
   background: #2f2a25;
   color: white;
   border-radius: 24px;
@@ -256,14 +256,21 @@ h2 {
   margin-bottom: 34px;
 }
 
-.currently h2 {
+.research-focus h2 {
   color: white;
 }
 
-.currently p {
+.research-focus p {
   color: rgba(255, 255, 255, 0.78);
   font-size: 1.13rem;
   max-width: 850px;
+  margin-bottom: 24px;
+}
+
+.research-focus .pill-row span {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: white;
 }
 
 .pill-row {
@@ -281,6 +288,42 @@ h2 {
   font-weight: 700;
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   box-shadow: 0 10px 30px rgba(60, 45, 30, 0.04);
+}
+
+.timeline {
+  border-left: 2px solid #d6cdbc;
+  padding-left: 26px;
+  display: grid;
+  gap: 22px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 7px;
+  width: 14px;
+  height: 14px;
+  background: #7a6045;
+  border-radius: 50%;
+  border: 3px solid #fbfaf7;
+}
+
+.timeline-item span {
+  display: block;
+  font-weight: 800;
+  color: #7a6045;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin-bottom: 4px;
+}
+
+.timeline-item p {
+  color: #514d47;
+  font-size: 1.05rem;
 }
 
 .publication-list {
@@ -348,7 +391,7 @@ footer {
     padding: 60px 0;
   }
 
-  .currently {
+  .research-focus {
     padding: 32px;
   }
 }
